@@ -1,0 +1,57 @@
+import 'package:flutter/material.dart';
+import 'package:projects/core/utls/routsmanager.dart';
+
+class QuranTitleWidget extends StatelessWidget {
+  String SuraTitle;
+  String NumberOfVerses;
+  int index;
+
+  QuranTitleWidget(
+      {super.key,
+      required this.SuraTitle,
+      required this.NumberOfVerses,
+      required this.index});
+
+  @override
+  Widget build(BuildContext context) {
+    return IntrinsicHeight(
+      child: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, RoutsManager.quranDetailsRoute,
+              arguments: SuraArgs(SuraName: SuraTitle, index: index));
+        },
+        child: Row(
+          textDirection: TextDirection.rtl,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Expanded(
+                child: Text(
+              SuraTitle,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleSmall,
+            )),
+            Expanded(
+                child: VerticalDivider(
+              color: Theme.of(context).dividerColor,
+              width: 3,
+              thickness: 3,
+            )),
+            Expanded(
+                child: Text(
+              NumberOfVerses,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleSmall,
+            )),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class SuraArgs {
+  String SuraName;
+  int index;
+
+  SuraArgs({required this.SuraName, required this.index});
+}
