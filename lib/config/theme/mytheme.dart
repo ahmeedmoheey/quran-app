@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projects/core/utls/color_manager.dart';
+import 'package:projects/core/utls/fonts_manager.dart';
 
 class MyTheme {
   static final ThemeData lightTheme = ThemeData(
@@ -14,8 +15,11 @@ class MyTheme {
           elevation: 0,
           backgroundColor: Colors.transparent,
           titleTextStyle: TextStyle(
-              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w700)),
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+              color: Colors.black,
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontFamily: FontsManager.elMessiri)),
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.white,
         unselectedIconTheme: IconThemeData(
@@ -29,15 +33,29 @@ class MyTheme {
         showSelectedLabels: true,
         showUnselectedLabels: false,
       ),
+      bottomSheetTheme: BottomSheetThemeData(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+        ),
+            elevation: 18,
+           backgroundColor: Colors.white
+      ),
       dividerColor: ColorManager.goldColor,
-      textTheme: TextTheme(
+      textTheme: const TextTheme(
+        titleSmall: TextStyle(
+            fontSize: 25, fontWeight: FontWeight.w700, color: Colors.black),
         bodySmall: TextStyle(
           color: Colors.black,
           fontSize: 23,
           fontWeight: FontWeight.w400,
         ),
-        titleSmall: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
+        displaySmall: TextStyle(
+            fontSize: 14, fontWeight: FontWeight.w400, color: Colors.black),
+        labelSmall: TextStyle(
+            fontSize: 16, fontWeight: FontWeight.w700, color: Colors.black),
+        bodyMedium: TextStyle(fontSize: 18,fontWeight: FontWeight.w700,color: ColorManager.goldColor),
       ),
+
       cardTheme: CardTheme(
         margin: EdgeInsets.all(9),
         elevation: 13,

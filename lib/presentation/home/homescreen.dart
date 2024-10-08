@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(AssetsManager.lightMainBg), fit: BoxFit.fill)),
+              image: AssetImage(AssetsManager.lightMainBg), fit: BoxFit.cover)),
       child: Scaffold(
         appBar: AppBar(
           title: const Text(StringsManager.appTitle),
