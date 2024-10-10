@@ -6,8 +6,9 @@ class MyTheme {
   static final ThemeData lightTheme = ThemeData(
       primaryColor: ColorManager.goldColor,
       scaffoldBackgroundColor: Colors.transparent,
-      appBarTheme: AppBarTheme(
+      appBarTheme:  const AppBarTheme(
           iconTheme: IconThemeData(
+
             color: Colors.black,
             size: 30,
           ),
@@ -56,9 +57,28 @@ class MyTheme {
         bodyMedium: TextStyle(fontSize: 18,fontWeight: FontWeight.w700,color: ColorManager.goldColor),
       ),
 
+
+
       cardTheme: CardTheme(
         margin: EdgeInsets.all(9),
         elevation: 13,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       ));
+         static final ThemeData darkTheme = ThemeData(
+           colorScheme: ColorScheme.fromSeed(seedColor: ColorManager.goldColor),
+          primaryColor: ColorManager.goldColor,
+          appBarTheme:  const AppBarTheme(
+             iconTheme: IconThemeData(
+              color: Colors.white
+             ),
+              titleTextStyle:TextStyle(
+                  color: Colors.black,
+                  fontSize: 25,
+                  fontWeight: FontWeight.w700,
+                  fontFamily: FontsManager.elMessiri
+                                                       ),
+                 )
+
+  );
+
 }
