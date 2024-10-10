@@ -10,7 +10,7 @@ class ChapterNameWidget extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
           border: Border.symmetric(
-        horizontal: BorderSide(color: Theme.of(context).primaryColor, width: 5),
+        horizontal: BorderSide(color: Theme.of(context).dividerColor, width: 5),
       )),
       child: IntrinsicHeight(
         child: Padding(

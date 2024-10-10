@@ -17,8 +17,7 @@ class LanguageBottomSheet extends StatelessWidget {
                 'English',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
-              Icon(Icons.check,
-                  size: 30, color: Theme.of(context).primaryColor),
+              Icon(Icons.check),
             ],
           ),
           SizedBox(
@@ -26,9 +25,7 @@ class LanguageBottomSheet extends StatelessWidget {
           ),
           Text('Arabic',
               style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium
-                  ?.copyWith(color: Colors.black)),
+                  .textTheme.displayMedium),
         ],
       ),
     );
