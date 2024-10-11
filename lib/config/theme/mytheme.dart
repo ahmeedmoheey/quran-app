@@ -3,7 +3,7 @@ import 'package:projects/core/utls/color_manager.dart';
 import 'package:projects/core/utls/fonts_manager.dart';
 
 class MyTheme {
-static bool isDrakEnabled = true;
+static bool isDrakEnabled = false;
   static final ThemeData lightTheme = ThemeData(
 
       primaryColor: ColorManager.goldColor,
