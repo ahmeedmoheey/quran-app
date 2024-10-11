@@ -10,4 +10,6 @@ class AssetsManager {
   static const String sebhaHeaderImage = 'assets/images/body_sebha_logo@2x.png';
   static const String headSebhaImage = 'assets/images/head_sebha_logo@2x.png';
   static const String darkMainBg = 'assets/images/dark_bg@2x.png';
+  static const String darkSebhaHeader = 'assets/images/head_sebha_dark@2x.png';
+  static const String darkbodySebha = 'assets/images/body_sebha_dark@2x.png';
 }

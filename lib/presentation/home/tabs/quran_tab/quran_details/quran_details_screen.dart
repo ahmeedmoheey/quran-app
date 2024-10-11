@@ -9,11 +9,9 @@ class QuranDetailsScreen extends StatefulWidget {
   QuranDetailsScreen({
     super.key,
   });
-
   @override
   State<QuranDetailsScreen> createState() => _QuranDetailsScreenState();
 }
-
 class _QuranDetailsScreenState extends State<QuranDetailsScreen> {
   List<String> verses = [];
   @override
@@ -50,7 +48,6 @@ class _QuranDetailsScreenState extends State<QuranDetailsScreen> {
       ),
     );
   }
-
   void readFile(int index) async {
     String fileContent =
         await rootBundle.loadString('assets/files/${index + 1}.txt');

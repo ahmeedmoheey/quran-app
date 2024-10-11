@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       initialRoute: RoutsManager.splashRoute,
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
     );
   }
 }

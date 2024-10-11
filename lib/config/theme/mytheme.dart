@@ -3,14 +3,13 @@ import 'package:projects/core/utls/color_manager.dart';
 import 'package:projects/core/utls/fonts_manager.dart';
 
 class MyTheme {
-static bool isDrakEnabled = true;
+static bool isDrakEnabled = false;
   static final ThemeData lightTheme = ThemeData(
-
       primaryColor: ColorManager.goldColor,
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(
-            color: ColorManager.goldColor,
+            color:Colors.black,
             size: 30,
           ),
           centerTitle: true,
@@ -78,8 +77,11 @@ static bool isDrakEnabled = true;
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       ));
 
-  static final ThemeData darkTheme = ThemeData(
 
+
+
+
+  static final ThemeData darkTheme = ThemeData(
       colorScheme: ColorScheme.fromSeed(
           seedColor: ColorManager.darkBlue,
           primary: ColorManager.darkBlue,
@@ -137,7 +139,7 @@ static bool isDrakEnabled = true;
             fontWeight: FontWeight.w400,
           ),
           displaySmall: TextStyle(
-              fontSize: 14, fontWeight: FontWeight.w400, color: Colors.black),
+              fontSize: 14, fontWeight: FontWeight.w400, color: Colors.white),
           labelSmall: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w700,
