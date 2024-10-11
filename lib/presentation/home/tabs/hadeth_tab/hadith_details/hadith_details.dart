@@ -5,7 +5,6 @@ import 'package:projects/presentation/home/tabs/hadeth_tab/hadeth_tab.dart';
 
 class HadithDetails extends StatelessWidget {
   const HadithDetails({super.key});
-
   @override
   Widget build(BuildContext context) {
     HadithItem hadith =

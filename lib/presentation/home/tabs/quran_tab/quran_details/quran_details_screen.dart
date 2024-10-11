@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:projects/config/theme/mytheme.dart';
 import 'package:projects/core/utls/assetsmanager.dart';
 import 'package:projects/presentation/home/tabs/quran_tab/quran_details/quran_widget.dart';
 import 'package:projects/presentation/home/tabs/quran_tab/widgets/quran_title_widget/quran_title_widget.dart';
@@ -15,16 +16,14 @@ class QuranDetailsScreen extends StatefulWidget {
 
 class _QuranDetailsScreenState extends State<QuranDetailsScreen> {
   List<String> verses = [];
-
   @override
   Widget build(BuildContext context) {
     SuraArgs args = ModalRoute.of(context)?.settings.arguments as SuraArgs;
     if (verses.isEmpty) readFile(args.index);
     return Container(
-      decoration: const BoxDecoration(
+      decoration:  BoxDecoration(
           image: DecorationImage(
-        image: AssetImage(AssetsManager.lightMainBg),
-        fit: BoxFit.fill,
+              image: AssetImage(MyTheme.isDrakEnabled ? AssetsManager.darkMainBg : AssetsManager.lightMainBg),fit: BoxFit.fill
       )),
       child: Scaffold(
         appBar: AppBar(
