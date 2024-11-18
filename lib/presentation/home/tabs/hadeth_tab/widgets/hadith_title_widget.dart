@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projects/core/utls/routsmanager.dart';
-import 'package:projects/presentation/home/tabs/hadeth_tab/hadeth_tab.dart';
+
+import '../hadeth_tab.dart';
 
 class HadithTitleWidget extends StatelessWidget {
   HadithTitleWidget({super.key, required this.hadith});

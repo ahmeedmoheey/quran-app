@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 class VerseWidget extends StatelessWidget {
   VerseWidget({super.key, required this.VerseItem});
-
   String VerseItem;
-
   @override
   Widget build(BuildContext context) {
     return Directionality(

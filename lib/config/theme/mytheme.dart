@@ -3,9 +3,13 @@ import 'package:projects/core/utls/color_manager.dart';
 import 'package:projects/core/utls/fonts_manager.dart';
 
 class MyTheme {
-static bool isDrakEnabled = false;
+  static bool isDrakEnabled = false;
   static final ThemeData lightTheme = ThemeData(
-
+    colorScheme: ColorScheme.fromSeed(seedColor:
+    ColorManager.goldColor,
+    primary: ColorManager.goldColor,
+      onPrimary: Colors.white
+    ),
       primaryColor: ColorManager.goldColor,
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: const AppBarTheme(
@@ -36,24 +40,24 @@ static bool isDrakEnabled = false;
         showUnselectedLabels: false,
       ),
       bottomSheetTheme: BottomSheetThemeData(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(14),
-          ),
-          elevation: 18,
-          backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+        ),
+        elevation: 18,
+        backgroundColor: Colors.white,
 
       ),
       iconTheme: IconThemeData(
-        color: ColorManager.goldColor
+          color: ColorManager.goldColor
       ),
       dividerColor: ColorManager.goldColor,
       textTheme: const TextTheme(
           titleSmall: TextStyle(
               fontSize: 25, fontWeight: FontWeight.w700, color: Colors.black),
           displayMedium: TextStyle(
-            fontSize:18 ,
-            fontWeight: FontWeight.w700,
-            color: Colors.black
+              fontSize:18 ,
+              fontWeight: FontWeight.w700,
+              color: Colors.black
           ),
           bodySmall: TextStyle(
             color: Colors.black,
@@ -79,7 +83,6 @@ static bool isDrakEnabled = false;
       ));
 
   static final ThemeData darkTheme = ThemeData(
-
       colorScheme: ColorScheme.fromSeed(
           seedColor: ColorManager.darkBlue,
           primary: ColorManager.darkBlue,
@@ -119,7 +122,7 @@ static bool isDrakEnabled = false;
           ),
           elevation: 18,
           backgroundColor: ColorManager.darkBlue),
-      iconTheme: IconThemeData(
+      iconTheme:const IconThemeData(
           color: ColorManager.yellowColor
       ),
       dividerColor: ColorManager.yellowColor,

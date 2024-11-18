@@ -11,30 +11,30 @@ class SettingsTab extends StatelessWidget {
              child: Column(
                crossAxisAlignment: CrossAxisAlignment.stretch,
                children: [
-                 SizedBox(height: 60,),
+                const  SizedBox(height: 60,),
                  Text('Theme',style: Theme.of(context).textTheme.labelSmall,),
-                 SizedBox(height: 4,),
+                  const SizedBox(height: 4,),
                  InkWell(
                    onTap: () {
                     showThemeBottomSheet(context);
                    },
                    child: Container(
-                     padding: EdgeInsets.symmetric(vertical: 8,horizontal: 4),
+                     padding:const EdgeInsets.symmetric(vertical: 8,horizontal: 4),
                        decoration: BoxDecoration(
                          border:Border.all(color: Theme.of(context).primaryColor,width: 2),
                          borderRadius: BorderRadius.circular(12)
                        ),
                        child: Text('Light',style: Theme.of(context).textTheme.displaySmall,)),
                  ),
-                 SizedBox(height: 12,),
+                const SizedBox(height: 12,),
                  Text('Language',style: Theme.of(context).textTheme.labelSmall,),
-                 SizedBox(height: 4,),
+              const   SizedBox(height: 4,),
                  InkWell(
                    onTap: () {
                        showLanguageBottomSheet(context);
                    },
                    child: Container(
-                       padding: EdgeInsets.symmetric(vertical: 8,horizontal: 4),
+                       padding:  const EdgeInsets.symmetric(vertical: 8,horizontal: 4),
                        decoration: BoxDecoration(
                            border:Border.all(color: Theme.of(context).primaryColor,width: 2),
                            borderRadius: BorderRadius.circular(12)

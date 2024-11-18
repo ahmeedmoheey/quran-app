@@ -1,6 +1,6 @@
 class StringsManager {
-  static const String appTitle = 'Quran';
-  static const String ahadithName = 'Ahadith';
+  static const String appTitle = 'Islami';
+  static const String ahadithName = 'El-Ahdith';
   static const String chapterName = 'Chapter Name';
   static const String numOfVerse = 'Verse Number ';
   static const String quranLabel = 'Quran';

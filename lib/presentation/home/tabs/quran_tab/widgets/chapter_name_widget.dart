@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class ChapterNameWidget extends StatelessWidget {
   const ChapterNameWidget({super.key});
@@ -20,7 +22,7 @@ class ChapterNameWidget extends StatelessWidget {
             children: [
               Expanded(
                   child: Text(
-                'Chapter Name',
+                AppLocalizations.of(context)!.chapterName,
                 style: Theme.of(context)
                     .textTheme
                     .titleSmall
@@ -33,7 +35,7 @@ class ChapterNameWidget extends StatelessWidget {
               )),
               Expanded(
                   child: Text(
-                'Number of Verses',
+                AppLocalizations.of(context)!.versesNumber,
                 style: Theme.of(context)
                     .textTheme
                     .titleSmall

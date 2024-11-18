@@ -42,7 +42,7 @@ class _HadethTabState extends State<HadethTab> {
 
   void readHadithFilo() async {
     String fileContent =
-        await rootBundle.loadString('assets/files/ahadeth.txt');
+    await rootBundle.loadString('assets/files/ahadeth.txt');
     List<String> hadithItemList = fileContent.split('#');
     for (var hadith in hadithItemList) {
       List<String> hadithLines = hadith.trim().split('\n');
